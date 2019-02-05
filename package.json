@@ -1,0 +1,15 @@
+{
+  "name": "linkchecker",
+  "version": "1.0.0",
+  "description": "Looks for broken links in the NHS.UK content API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lianne Potter & Neil McLaughlin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
