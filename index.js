@@ -1,6 +1,8 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 
+const contentSubscriptionKey = process.env["CONTENT_SUBSCRIPTION_KEY"];
+
 async function getAllLinks(url) {
     try {
         let result = await axios.get(url);
@@ -17,7 +19,7 @@ async function getAllLinks(url) {
 }
 
 async function crawlPage() {
-    let list = await getAllLinks('https://www.nhs.uk')
+    let list = await getAllLinks('https://api.nhs.uk/conditions/acne?subscription-key=' + contentSubscriptionKey)
     console.log(list);
 }
 
